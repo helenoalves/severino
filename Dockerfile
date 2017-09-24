@@ -17,6 +17,16 @@ RUN tar -xvzf /tmp/docker-latest.tgz && \
 
 RUN echo http://dl-2.alpinelinux.org/alpine/edge/community/ >> /etc/apk/repositories
 RUN apk --no-cache add shadow nodejs
+RUN apk -v --update add \
+        python \
+        py-pip \
+        groff \
+        less \
+        mailcap \
+        && \
+    pip install --upgrade awscli s3cmd python-magic && \
+    apk -v --purge del py-pip && \
+    rm /var/cache/apk/*
 
 RUN addgroup -g 933  docker
 RUN addgroup jenkins docker
