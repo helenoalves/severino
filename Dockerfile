@@ -1,6 +1,6 @@
 
 FROM jenkins/jenkins:alpine
-MAINTAINER iHealth Group <desenvolvimento@ihealthgroup.com.br>
+MAINTAINER Heleno Alves <helenoa@gmail.com>
 
 USER jenkins
 
