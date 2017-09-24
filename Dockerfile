@@ -16,7 +16,7 @@ RUN tar -xvzf /tmp/docker-latest.tgz && \
     rm -f /tmp/docker-latest.tgz
 
 RUN echo http://dl-2.alpinelinux.org/alpine/edge/community/ >> /etc/apk/repositories
-RUN apk --no-cache add shadow
+RUN apk --no-cache add shadow nodejs
 
 RUN addgroup -g 933  docker
 RUN addgroup jenkins docker
