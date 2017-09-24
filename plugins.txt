@@ -1,7 +1,10 @@
 ace-editor:latest
+amazon-ecr:latest
 ant:latest
 antisamy-markup-formatter:latest
 authentication-tokens:latest
+aws-credentials:latest
+aws-java-sdk:latest
 blueocean:latest
 blueocean-autofavorite:latest
 blueocean-commons:latest
