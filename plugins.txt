@@ -78,6 +78,7 @@ openid:latest
 openid4java:latest
 openshift-login:latest
 pam-auth:latest
+pipeline-aws:latest
 pipeline-build-step:latest
 pipeline-graph-analysis:latest
 pipeline-input-step:latest
